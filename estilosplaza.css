@@ -1,0 +1,888 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+    width: 80%;
+    max-width: 1920px;
+    margin: 0 auto;
+    }
+
+.logo-nav-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.header {
+    padding: 2rem 0;
+    background: rgba(239, 239, 239,0.1);
+    height: 220px;
+    color: #fff;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+}
+
+.header label{
+     margin: 90px;
+    font-size: 40px;
+    cursor: pointer;
+    display: block;
+}
+   
+
+/*Estilos para menu*/
+
+#btn-menu {
+    display: none;
+}
+
+.menu {
+    position: absolute;
+    top: 220px;
+    left: 0;
+    width: 25%;
+    transform: translateX(400%);
+    transition: all 0.3s;
+    justify-content: flex-end;
+}
+
+.menu ul {
+    background: #fff;
+    display: block;
+    list-style: none;
+}
+
+.menu ul ul {
+    display: none;
+    background: rgba(0,0,0,0.04);
+}
+
+.menu ul ul a{
+    padding: 15px 50px;
+    color: #4D4D4D;
+}
+
+.menu a {
+    display: block;
+    padding: 15px 20px;
+    color: #AFC80A;
+    text-decoration: none;
+}
+
+.menu a:hover {
+    background: rgba(0,0,0,0.07);
+}
+
+.menu a span {
+    margin-left: 10px;
+    position: absolute;
+    right: 5px;
+}
+
+.menu ul li:hover ul {
+    display: none;
+    position: static;
+}
+
+#btn-menu:checked ~ .menu {
+    transform: translateX(300%);
+}
+
+.main {
+    padding-top: 10rem;
+}
+
+
+BODY{
+    margin: 0;
+    
+}
+.portada{
+    position: relative;
+    margin: 0;
+    line-height: 0;  
+    
+}
+
+.titulos{
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    text-align: right;
+    font-size: 32px;
+    width: 80%;
+    position: absolute;
+    top: 33%;
+                
+}
+
+
+.texto-entidades{
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    text-align: right;
+    position: absolute;
+    top: 50%;
+    font-size: 13px;
+    width: 28%; 
+    padding: 0 0 0 700px
+    
+}
+
+.foto-institucional img{
+    margin: 0;
+    position: relative;
+    float: right;
+    line-height: 0; 
+    
+    
+}
+
+.titulo-ins{
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    text-align: right;
+    font-size: 32px;
+    width: 80%;
+    position: absolute;
+    top: 115%;
+    
+}
+
+.texto-info-institucional{
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    text-align:left;
+    position: absolute;
+    top: 140%;
+    font-size: 12px;
+    width: 23%; 
+    padding: 0 0 0 778px
+    
+}
+
+.foto-trabaja img{
+    margin: 0;
+    position: relative;
+    float: right;
+    line-height: 0; 
+   margin: 30px 60px
+    
+}
+.trabaja-con-nosotros{
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(51, 51, 51);
+    text-align:right;
+    position: absolute;
+    top: 156%;
+    font-size: 32px;
+    width: 35%; 
+    padding: 0  140px
+}
+
+.texto-trabaja{
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(51, 51, 51);
+    text-align:right;
+    position: absolute;
+    top: 180%;
+    font-size: 20px;
+    width: 35%; 
+    padding: 0  140px
+    
+}
+  
+.masinfo{
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    text-align:right;
+    position:absolute;
+    top: 200%;
+    font-size: 20px;
+    width: ; 
+    padding:  0 20px;
+    
+}
+
+.masinfo{
+     
+    height: 28px;
+    background-color: rgb(175, 200, 10);
+    border-radius: 20px;
+     bottom: 0;
+    right: 55%;
+    
+}
+
+.masinfo:hover{
+    background-color: rgb(44, 89, 47)
+}
+
+.afilia{
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(51, 51, 51);
+    text-align:right;
+    position: absolute;
+    top: 220%;
+    font-size: 32px;
+    width: 35%; 
+    padding: 0  140px
+}
+
+.texto-afilia{
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(51, 51, 51);
+    text-align:right;
+    position: absolute;
+    top: 237%;
+    font-size: 20px;
+    width: 35%; 
+    padding: 0  140px
+}
+
+.foto-menu img{
+     margin: 271px 190px;
+    position: relative;
+    float: right;
+    line-height: 0; 
+    
+    
+}
+
+.video-plaza{
+    width: 50%;
+}
+ 
+.caja-video{
+    width: 50%;
+    
+}
+
+.caja-video video{
+    width: 200%;
+    margin: 610px 0
+}
+
+.bmenu ul{
+    list-style-type: none; 
+  
+}
+
+
+.bmenu ul li a{
+    text-decoration: none; 
+    color: black; 
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    position: absolute;
+    top: 282%;
+    padding: 0 872px;
+    }
+    
+
+.bmenu-ipes ul{
+    list-style-type: none;
+}
+ 
+.bmenu-ipes ul li a{
+    text-decoration: none;
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    position: absolute;
+    top: 288.5%;
+    padding: 0 872px;
+    
+    
+}
+
+.bmenu-insc ul{
+    list-style-type: none;
+}
+ 
+.bmenu-insc ul li a{
+    text-decoration: none;
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    position: absolute;
+    top: 294.5%;
+    padding: 0 872px;
+    
+    
+}
+
+/*AQUI EMPIEZAN LOS ESTILOS PARA COMPRAS*/
+
+.portadacompras{
+    position: relative;
+    margin: 0;
+    line-height: 0;  
+    }
+
+.titulocompras{
+    color: white;
+    position: absolute;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 26px;
+    top: 30%;
+    text-align: center;
+    padding: 0 0 0 600px;
+        
+}
+
+.textoportada{
+    color: rgb(51, 51, 51);
+    position: absolute;
+    font-family: 'Montserrat', sans-serif;
+    font-size: ;
+    top: 53%;
+    margin: 0 0 0 154px
+}
+
+.imagenenvio{
+    position: relative;
+}
+
+.tituloenvio{
+    color: rgb(44,90,47);
+    font-family: 'Montserrat', sans-serif;
+    position: absolute;
+    top: 72%;
+    padding: 0 0 0 100px;
+    font-size: 28px
+
+}
+
+.textoenvio{
+    color: rgb(44,90,47);
+    font-family: 'Montserrat', sans-serif;
+    position: absolute;
+    top: 95%;
+    padding: 0 0 0 100px;
+    }
+
+.textooenvio{
+     color: rgb(51,51,51);
+    font-family: 'Montserrat', sans-serif;
+    top: 78%;
+    position: absolute;
+    width: 580;
+    padding: 0 0 0 680px;
+    font-size: 15px;
+}
+
+
+.imagendevoluciones{
+    position: relative;
+    top: 50px;
+    padding: 0 0 0 708px
+}
+
+.titulodevoluciones{
+   color: rgb(44,90,47);
+    font-family: 'Montserrat', sans-serif;
+    position: absolute;
+    top: 130%;
+    padding: 0 0 0 740px;
+    font-size: 28px 
+}
+
+.textodevoluciones{
+    color: rgb(44,90,47);
+    font-family: 'Montserrat', sans-serif;
+    position: absolute;
+    top: 145%;
+    margin: 0 0 0 740px;
+    
+} 
+
+.textoodevoluciones{
+    color: rgb(51,51,51);
+    font-family: 'Montserrat', sans-serif;
+    top: 132%;    
+    text-align: left;
+    position: absolute; 
+    width: 580px;
+    margin: 0 0 0 50px;
+    font-size: 15px
+}
+
+.fotoventajas{
+    position: relative;
+    top: 125px
+}
+
+.tituloventajas{
+     color: rgb(44,90,47);
+    font-family: 'Montserrat', sans-serif;
+    position: absolute;
+    top: 200%;
+    padding: 0 0 0 100px;
+    font-size: 28px
+}
+
+
+.textoventajas{
+    color: rgb(44,90,47);
+    font-family: 'Montserrat', sans-serif;
+    position: absolute;
+    top: 218%;
+    padding: 0 0 0 100px;
+}
+
+.textooventajas{
+    color: rgb(51,51,51);
+    font-family: 'Montserrat', sans-serif;
+    top: 205%;
+    position: absolute;
+    width: 580px;
+    padding: 0 0 0 700px;
+    font-size: 15px;
+}
+
+.fotoservicios{
+    position: relative;
+    top: 190px;
+    padding: 0 0 0 708px;
+}
+
+.tituloservicios{
+    color: rgb(44,90,47);
+    font-family: 'Montserrat', sans-serif;
+    position: absolute;
+    top: 270%;
+    padding: 0 0 0 1040px;
+    font-size: 28px 
+}
+
+.textoservicios{
+    color: rgb(44,90,47);
+    font-family: 'Montserrat', sans-serif;
+    position: absolute;
+    top: 285%;
+    margin: 0 0 0 1040px;
+}
+
+.textooservicios{
+    color: rgb(51,51,51);
+    font-family: 'Montserrat', sans-serif;
+    top: 280%;    
+    text-align: left;
+    position: absolute; 
+    width: 580px;
+    margin: 0 0 0 47px;
+    font-size: 15px
+}
+
+
+/*AQUI EMPIEZAN LOS ESTILOS PARA NUESTRA GENTE*/
+
+.portadacompras{
+    position: relative;
+    margin: 0;
+    line-height: 0;  
+    }
+
+.titulonuestragente{
+    color: white;
+    position: absolute;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 26px;
+    top: 23%;
+    text-align: center;
+    padding: 0 0 0 600px;
+        
+}
+
+.textonuestragente{
+    color: rgb(51, 51, 51);
+    position: absolute;
+    font-family: 'Montserrat', sans-serif;
+    font-size: ;
+    top: 44%;
+    text-align: center;
+    
+}
+
+.fotorubiela{
+    position: relative;
+}
+
+.nombrerubiela{
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    position: absolute;
+    top: 72%;
+    padding: 0 3%;
+    font-size: 28px
+
+}
+
+.reseñarubiela{
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    position: absolute;
+    top: 95%;
+    padding: 0 3%
+    }
+
+.textorubiela{
+    color: rgb(51,51,51);
+    font-family: 'Montserrat', sans-serif;
+    position: absolute;
+    top: 70%;    
+    width: 45%;
+    padding: 0 0 0 50%
+    
+}
+
+.fotojavier{
+    position: relative;
+    top: 50px;
+    padding: 0 0 0 57%;
+}
+
+.nombrejavier{
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    position: absolute;
+    top: 119%;
+    padding: 0 0 0 62%;
+    font-size: 28px;
+
+}
+
+.resenajavier{
+    color:white;
+    font-family: 'Montserrat', sans-serif;
+    top: 142%;    
+    text-align: left;
+    position: absolute; 
+    padding: 0 0 0 62%;
+    width: 20%;
+        
+}
+
+.textojavier{
+    color: rgb(51,51,51);
+    font-family: 'Montserrat', sans-serif;
+    top: 125%;    
+    text-align: left;
+    position: absolute; 
+    width: 45%;
+    margin: 0 2%;
+    
+}
+
+.fotokaris{
+    position: relative;
+    margin: 7% 0
+}
+
+.nombrekaris{
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    position: absolute;
+    top: 180%;
+    padding: 0 3%;
+    font-size: 28px
+}
+
+.resenakaris{
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    position: absolute;
+    top: 203%;
+    padding: 0 3%
+}
+
+.textokaris{
+    color: rgb(51,51,51);
+    font-family: 'Montserrat', sans-serif;
+    position: absolute;
+    top: 186%;    
+    width: 45%;
+    padding: 0 0 0 50%
+}
+
+.fotorobinson{
+  position: relative;
+    top: -50px;
+    padding: 0 0 0 57%;
+}
+
+.nombrerobinson{
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    position: absolute;
+    top: 230%;
+    padding: 0 0 0 60%;
+    font-size: 28px;
+}
+
+.resenarobinson{
+    color:white;
+    font-family: 'Montserrat', sans-serif;
+    top: 250%;    
+    text-align: left;
+    position: absolute; 
+    padding: 0 0 0 60%;
+    width: 20%;
+    
+}
+
+.textorobinson{
+    color: rgb(51,51,51);
+    font-family: 'Montserrat', sans-serif;
+    top: 234%;    
+    text-align: left;
+    position: absolute; 
+    width: 45%;
+    margin: 0 2%;
+    
+}
+
+/*AQUI EMPIEZAN LOS ESTILOS PARA DISTRIBUIDORES*/
+
+.textoportadadis{
+    color: white;
+    position: absolute;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 26px;
+    top: 23%;
+    text-align: center;
+    padding: 0 0px 0 500px;
+        
+}
+
+.texto2portada{
+    color: white;
+    position: absolute;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    top: 33%;
+    text-align: center;
+    padding: 0 0px 0 565px;
+}
+
+.texto3portada{
+   color: white;
+    position: absolute;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    top: 45%;
+    text-align: center;
+    padding: 0 0px 0 420px; 
+}
+
+
+
+/*CAJITAS ANIMADAS*/
+
+.tarjetas{
+    font-family: font-family: 'Montserrat', sans-serif;
+    height: 100vh;
+    margin: 0 50px 0 0;
+
+}
+
+.contenedor{
+    position: relative;
+    padding: 0;
+    display: grid; 
+    grid-template-columns: repeat(4,1fr);
+    justify-content: center;
+    align-content: center;
+    grid-gap: 20%;
+    margin: auto;
+    
+    
+}
+
+.card{
+    width: 200px;
+    height: 200px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.5);
+    text-align: center;
+    padding: px;
+    overflow: hidden;
+    border-radius: 20px 20px;
+    transition: all 0.5s ease-in-out;
+    
+}
+
+
+.card:hover{
+    height: 380px;
+    border-radius: 20px 20px;
+    
+    
+}
+
+.card-encabezado{
+    position: relative;
+}
+
+.card-encabezado:before, .card-encabezado:after{
+    content: "";
+    position: absolute;
+    opacity: 0.7;
+    
+}
+
+.card-encabezado img{
+    width: 200px;
+    height: 200px; 
+    object-fit: cover;
+    border-radius: 10%;
+   margin: 0;
+    position: relative;
+    opacity:.75;
+    
+   
+}
+
+.card-encabezado img:hover{
+    border-radius: 20px 0px 0px;
+   opacity: 100%;
+    transition: all 0.5s ease;
+}
+
+.card-iconos{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0.5px 0;
+    
+    
+}
+
+.card-iconos li img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin: 15px 0;
+}
+
+.card-contenido{
+    margin: 20px
+}
+
+.card-iconos li{
+    width: 40px;
+    height: 40px;
+    background-color: rgb (175 200 10);
+    border-radius: 50%;
+    line-height: 40px;
+    margin: 0 5px;
+    transition: all 0.5s ease;
+   
+    
+}
+
+.agrandar{
+    transform: scale(0);
+    opacity: 0;
+    transition: all 0.5 ease;
+}
+
+.card:hover .agrandar{
+    transform: scale(1);
+    opacity: 1;
+    
+}
+.card-iconos li:nth-child(1){
+    transition-delay: 0.2s;
+    
+}
+
+.card-iconos li:nth-child(2){
+    transition-delay: 0.3s;
+}
+
+.card-iconos li:nth-child(3)
+    transition-delay: 0.4s;
+}
+
+.card-contenido nombre{
+    font-family:  'Montserrat', sans-serif;
+}
+
+
+/*AQUI EMPIEZAN LOS ESTILOS PARA CAFETERIA Y RESTAURANTES*/
+
+.textoportadacaf{
+    color: white;
+    position: absolute;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 26px;
+    top: 23%;
+    text-align: center;
+    padding: 0 0px 0 380px;
+        
+}
+
+.texto2portadacaf{
+    color: white;
+    position: absolute;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    top: 33%;
+    text-align: center;
+    padding: 0 0 0 480px;
+}
+
+.texto3portadacaf{
+   color: white;
+    position: absolute;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+    top: 42%;
+    text-align: center;
+    margin: 0 60px 0 60px; 
+}
+
+.scroll{
+    height: 235px;
+	width: 1000px;
+	overflow: auto;
+	padding: 10px;
+    margin: 0 0 0 160px;
+    
+}
+
+.scroll table{
+    width: 993px;
+    
+}
+
+.nombreplaza{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 17px;
+    color: rgb(44 89 47);
+
+}
+
+.datosplaza{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    color: black
+}
+
+
+
+
+
+
